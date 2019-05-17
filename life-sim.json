@@ -1,0 +1,72 @@
+{
+    "event_types": [
+	{
+	    "name": "root",
+	    "description": "The original event that starts off the simulation. No events occur before it.",
+	    "suffixes": {"get_name": 100}
+	},
+	{
+	    "name": "end",
+	    "description": "The last event of the simulation",
+	    "suffixes": {}
+	},
+	{
+	    "name": "get_name",
+	    "description": "Ask for a person's name for later processing",
+	    "suffixes": {"name_born": 99, "name_dies": 1}
+	},
+	{
+	    "name": "name_born",
+	    "description": "A new person is born",
+	    "suffixes": {"name_is_boy": 50, "name_is_girl": 50}
+	},
+	{
+	    "name": "name_dies",
+	    "description": "Person dies",
+	    "suffixes": {"end": 100}
+	},
+	{
+	    "name": "name_is_boy",
+	    "description": "Person is a boy",
+	    "suffixes": {"name_is_american": 90, "name_is_canadian": 10}
+	},
+	{
+	    "name": "name_is_girl",
+	    "description": "Person is a girl",
+	    "suffixes": {"name_is_american": 90, "name_is_canadian": 10}
+	},
+	{
+	    "name": "name_is_american",
+	    "description": "Person is American",
+	    "suffixes": {"day_passes": 100}
+	},
+	{
+	    "name": "name_is_canadian",
+	    "description": "Person is Canadian",
+	    "suffixes": {"day_passes": 100}
+	},
+	{
+	    "name": "day_passes",
+	    "description": "One day of the year goes by",
+	    "suffixes": {"day_passes": 75, "name_gets_sick": 4,
+			 "name_can't_sleep": 10, "name_cries": 10,
+			 "name_dies": 1}
+	},
+	{
+	    "name": "name_gets_sick",
+	    "description": "Person is ill",
+	    "suffixes": {"day_passes": 30, "name_can't_sleep": 45, "name_cries": 20,
+			 "name_dies": 5}
+	},
+	{
+	    "name": "name_can't_sleep",
+	    "description": "Person has trouble getting rest",
+	    "suffixes": {"day_passes": 60, "name_cries": 40}
+	},
+	{
+	    "name": "name_cries",
+	    "description": "Person is not in a great mood",
+	    "suffixes": {"day_passes": 40, "name_cries": 60}
+	}
+    ]
+}

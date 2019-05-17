@@ -1,0 +1,24 @@
+{
+    "event_types": [
+	{
+	    "name": "root",
+	    "description": "The original event that starts off the simulation. No events occur before it.",
+	    "suffixes": {"add_10": 50, "add_20": 50}
+	},
+	{
+	    "name": "end",
+	    "description": "The last event of the simulation",
+	    "suffixes": {}
+	},
+	{
+	    "name": "add_10",
+	    "description": "Add 10 to the sum",
+	    "suffixes": {"add_10": 45, "add_20": 45, "end": 10}
+	},
+	{
+	    "name": "add_20",
+	    "description": "Add 20 to the sum",
+	    "suffixes": {"add_10": 45, "add_20": 45, "end": 10}
+	}
+    ]
+}
