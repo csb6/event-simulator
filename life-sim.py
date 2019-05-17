@@ -1,7 +1,7 @@
 """
     File: life-sim.py
     Author: Cole Blakley
-    Purpose: Contains function definitions for sim kit that simulates a
+    Purpose: Contains function definitions for a sim kit that simulates a
         person's life as a series of states (e.g. gets sicks, cries, is born).
         Depends on states defined in life-sim.json. Creates Agent object named
         "Tom" that runs the sim, printing out the description of each event
@@ -52,7 +52,7 @@ def main():
     event_types = event_sim.load_event_types("life-sim.json")
     tom = event_sim.Agent("Tom", event_types)
     life_sim = event_sim.SimKit(start, update, end)
-    #Simulate (at most) 500 events in a person's life
+    #Simulate 500 (at most - person may die earlier) events in a person's life
     tom.run(life_sim, 500)
 
 main()

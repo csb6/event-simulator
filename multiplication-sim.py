@@ -2,11 +2,11 @@
     File: multiplication-sim.py
     Author: Cole Blakley
     Purpose: Multiplies 10 by an amount determined by a Markov chain. After a
-        50/50 chance of adding 10 or 20, there is a 45% chance each event to add
+        50/50 chance of adding 10 or 20, there is a 45% chance each event will add
         10 or 20, with a 10% chance of the simulation stopping. Max possible sum is
         600 using a upper limit of 30 total events. Depends on mulitplication-sim.json
         for the specifications of each state/transition. Intended to be a simple (and
-        not very useful) example to show what bare-bones sim looks like.
+        not very useful) example to show what a bare-bones sim looks like.
 """
 import event_sim
 

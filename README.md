@@ -29,6 +29,6 @@ make simulations where transitions between different states depends on weighted 
 
 A fairly simple simulation of a person's life, from birth until death.
 
-**Flow Chart of different states in life-sim.py**:
+*Flow chart of different states in life-sim.py*:
 
 ![Image](life-sim-diagram.png)
